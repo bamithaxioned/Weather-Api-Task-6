@@ -100,12 +100,39 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 90%; 
   margin: 0 auto;
+}
+
+/* CSS RESET  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 /*=================================
   Header styling starts here
 =================================*/
+
+header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #e6e6e6;
+}
+
+.main-heading {
+  color: rgb(46,186,255);
+  text-shadow: 3px 2px 5px #000;
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { filter: hue-rotate(0deg); }
+  100%{ filter: hue-rotate(360deg); }
+}
 
 /*=================================
   Header styling ends here
